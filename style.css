@@ -1,23 +1,179 @@
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
+    src: url('assets/fonts/Norse/norse-bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/Norse/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'rubiklight';
-    src: url('rubik-variablefont_wght-webfont.woff2') format('woff2'),
-         url('rubik-variablefont_wght-webfont.woff') format('woff');
+    src: url('assets/fonts/Rubik/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+         url('assets/fonts/Rubik/rubik-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'rubiklight_italic';
-    src: url('rubik-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('rubik-italic-variablefont_wght-webfont.woff') format('woff');
+    src: url('assets/fonts/Rubik/rubik-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('assets/fonts/Rubik/rubik-italic-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #596D48;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+#form-wrapper {
+    height: 100vh;
+    width: 70vw;
+    margin: 0 auto;
+    font-family: 'rubiklight';
+    font-weight: 400;
+}
+
+#form-left-side {
+    width: 35%;
+    height: 100%;
+    background: url('assets/images/sander-copier-car.jpg');
+    background-size: cover;
+    background-position: -75px -150px;
+}
+
+#img-container {
+    height: 15%;
+    width: 100%;
+    background-color: rgb(255, 192, 203, 0.10);
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#image {
+    height: 80%;
+    display: inline-block;
+}
+
+#img-text {
+    display: inline-block;
+    text-align: center;
+    font-family: 'norsebold', 'Times New Roman';
+    color: white;
+    font-size: 5rem;
+    line-height: 162px;
+}
+
+#background-image-credits {
+    color: white;
+    width: 60%;
+    bottom: 1rem;
+    left: 20%;
+}
+
+a {
+    text-decoration-color: white;
+    color: white;
+}
+
+a:hover {
+    color: rgb(151, 0, 151);
+}
+
+#form-right-side {
+    padding-top: 10%;
+    width: 65%;
+    height: 100%;
+    left: 35%;
+    background-color: rgb(238, 238, 238);
+}
+
+.form-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 2.5rem;
+}
+
+.form-text + .form-text {
+    margin-top: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+#form-container {
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.25);
+    padding-left: 2.5rem;
+}
+
+#form-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+form {
+    display: flex; 
+    flex-flow: row wrap;
+    gap: 10%
+}
+
+.input-pair {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 1.5rem;
+}
+
+.input-pair > input {
+    height: 1.8rem;
+    border-radius: 0.2rem;
+    border: 1px solid #E5E7EB;
+}
+
+.input-pair > label {
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: rgb(68, 68, 68);
+}
+
+#submit-button {
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #596D48;
+    padding: 1rem 3rem;
+    margin: 3rem 0 2rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+#sign-up-text {
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+#sing-up-link {
+    font-weight: bold;
+    color: #596D48;
+    text-decoration: none;
 }
